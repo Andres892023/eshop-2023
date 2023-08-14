@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcademloShop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">AcademloShop</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">AcademloShop</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a class="menu-button back-button" href="./index.html">
+                        <i class="bi bi-caret-left"></i>Seguir comprando
+                    </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a class="menu-button cart-button active" href="./carrito.html">
+                        <i class="bi bi-cart"></i>Carrito
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© AndresR 2023</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class= "main-title">Carrito</h2>
+                <div class="cart-container">
+                    <p id="empty-cart" class="empty-cart">Tu carrito esta vacio <i class="bi bi-emoji-frown"></i></p>
+                    <div id="cart-products" class="cart-products">
+                        <!-- esto se completa con JS-->
+                    </div>
+                    <div id="cart-products-actions" class="cart-products-actions">
+                        <div class="cart-product-actions-left">
+                            <button id="cart-actions-empty" class="cart-actions-empty">Vaciar Carrito</button>
+                        </div>
+                        <div class="cart-product-actions-right">
+                            <div id="cart-actions-total" class="cart-actions-total">
+                                <p>Total</p>
+                                <p id="total"></p>
+                                <button id="cart-actions-buy" class="cart-actions-buy">Comprar Ahora</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p id="cart-bought"class="cart-bought">Gracias por tu compra <i class="bi bi-emoji-laughing-fill"></i></p>
+
+                </div>
+
+        </main>
+    </div>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
