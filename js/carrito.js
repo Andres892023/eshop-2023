@@ -9,7 +9,7 @@ const ContainerCartBought = document.querySelector("#cart-bought");
 let deleteButtons = document.querySelector(".cart-product-delete");
 const deleteAllButton = document.querySelector("#cart-actions-empty");
 const totalContainer = document.querySelector("#total");
-const boyAllButton = document.querySelector("#cart-actions-buy");
+const buyAllButton = document.querySelector("#cart-actions-buy");
 
 
 function loadProductsonCart() {
@@ -110,9 +110,9 @@ function loadTotal() {
     totalContainer.innerText = `$${totalCalculate}`;
 }
 
-boyAllButton.addEventListener("click", boyAllItems);
+buyAllButton.addEventListener("click", buyAllItems);
 
-function boyAllItems () {
+function buyAllItems () {
 
     if (confirm ("¿desea comprar los productos seleccionados?")) {
 
